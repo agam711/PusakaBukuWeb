@@ -22,10 +22,9 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
-    background: #fff;
+    padding: 5px 5px;
     border: none;
-    border-radius: 0;
+    border-radius: 10px;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -36,16 +35,6 @@ a:focus {
     border: none;
 }
 
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
-}
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
 
 #sidebar {
     width: 250px;
@@ -54,7 +43,7 @@ a:focus {
     left: -250px;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #445158;
     color: #fff;
     transition: all 0.3s;
     overflow-y: scroll;
@@ -70,7 +59,7 @@ a:focus {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #7386D5;
+    background: #445158;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -82,7 +71,7 @@ a:focus {
 
 #dismiss:hover {
     background: #fff;
-    color: #7386D5;
+    color: #445158;
 }
 
 .overlay {
@@ -102,12 +91,12 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #788b94;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #788b94;
 }
 
 #sidebar ul p {
@@ -122,14 +111,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #445158;
     background: #fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #445158;
 }
 
 a[data-toggle="collapse"] {
@@ -147,23 +136,41 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #788b94;
 }
-
-
-
-
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
 
 #content {
     width: 100%;
     padding: 20px;
+    background-color: #788b94;
+    align-self: center;
     min-height: 100vh;
     transition: all 0.3s;
-    position: absolute;
     top: 0;
     right: 0;
 }
+
+.buku {
+    float:left;
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    width: 200px; /* Set a small width */
+    margin-right:10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.buku img{
+    ali
+    border: 1px solid #ddd; /* Gray border */
+        border-radius: 4px;  /* Rounded border */
+        padding: 5px; /* Some padding */
+        width: 150px; /* Set a small width */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.buku:hover {
+    box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
+  }
