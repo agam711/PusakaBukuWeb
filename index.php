@@ -1,7 +1,6 @@
 <?php
 require 'vendor/autoload.php';
 use Carbon\Carbon;
-
 ?>
 
 <!DOCTYPE html>
@@ -26,9 +25,6 @@ use Carbon\Carbon;
 </head>
 
 <body>
-<?php 
-Carbon\Carbon::now();
-?>
     <div class="wrapper">
         <nav id="sidebar">
             <div id="dismiss">
@@ -40,7 +36,11 @@ Carbon\Carbon::now();
             </div>
 
             <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
+                <p> 
+                 <?php
+                    printf("Right now is %s", Carbon::now()->toFormattedDateString());
+                    ?>
+                  </p>
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">HomePage</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -91,9 +91,6 @@ Carbon\Carbon::now();
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
-                    <?php
-                    printf("Now: %s", Carbon::now());
-                    ?>
                     <img src="img/logo.png" alt="" width="110px" height="110px" >
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
